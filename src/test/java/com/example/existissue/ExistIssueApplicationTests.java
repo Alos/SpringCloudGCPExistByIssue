@@ -19,7 +19,7 @@ class ExistIssueApplicationTests {
     Cat cat = new Cat();
     cat.setAge(2).setName("bob");
     Cat savedCat = animalRepository.save(cat);
-    System.out.println("Saved cat: " + savedCat.toString());
+    System.out.println("Saved cat: " + savedCat);
     assertNotNull(savedCat);
     boolean isCatThere = animalRepository.existsByName("bob");
     assertTrue(isCatThere);
