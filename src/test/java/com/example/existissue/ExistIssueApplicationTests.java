@@ -22,7 +22,7 @@ class ExistIssueApplicationTests {
     System.out.println("Saved cat: " + savedCat.toString());
     assertNotNull(savedCat);
     boolean isCatThere = animalRepository.existsByName("bob");
-    assertTrue( isCatThere);
+    assertTrue(isCatThere);
   }
 
   @Test
