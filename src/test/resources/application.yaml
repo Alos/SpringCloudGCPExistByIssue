@@ -1,0 +1,25 @@
+spring:
+  application:
+    name: animal-service
+  cloud:
+    config:
+      enabled: false
+    gcp:
+      datastore:
+        emulator:
+          port: 8182
+          enabled: true
+          consistency: 1
+
+#Server configuration
+server:
+  shutdown: immediate
+
+#Actuator endpoints
+management:
+  health:
+    enabled: false
+    pubsub:
+      enabled: false
+  server:
+    port: 8081
